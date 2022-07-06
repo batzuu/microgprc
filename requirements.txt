@@ -1,0 +1,5 @@
+grpcio==1.47.0
+grpcio-tools==1.47.0
+pycodestyle==2.8.0
+six==1.16.0
+toml==0.10.2

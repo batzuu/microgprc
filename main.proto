@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package packageandfunction;
+
+service MainService {
+	rpc ExecFunction(functionData) returns (functionResult);
+	rpc InstallPackage(packageData) returns (packageStatus);
+}
+
+message functionData {
+	string functionName = 1;
+	string name = 2;
+}
+
+message packageData {
+	repeated string packageList = 1;
+}
+
+message packageStatus {
+	int32 packageCode = 1;
+}
+
+message functionResult {
+	string reply = 1;
+}

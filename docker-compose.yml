@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  server:
+    build: .
+    command: python3 /usr/app/server.py
+    stdin_open: true
+    volumes:
+      - ./server.py:/usr/app/server.py:ro
+      - ./grpc_compiled:/usr/app/grpc_compiled
+    ports:
+      - "8080:8080"

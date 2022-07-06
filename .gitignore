@@ -1,0 +1,3 @@
+.vscode
+/grpc_compiled/__pycache__/
+testenv
